@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="81.32">
+    <testcase classname="Check Login Functionality" name="Login to the Schedule screen" time="50.673">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+When user reset app.........................................................passed
+When user enters credentials................................................passed
+When user clicks on Login...................................................passed
+Then user is on homepage....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check Login Functionality" name="verify the  functionality of clock in and out procedure" time="3.039">
+        <failure message="Cannot invoke &quot;io.appium.java_client.AppiumDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[When user Click on the patient details......................................failed
+When user Click on the Clock In button......................................skipped
+And Click on continue.......................................................skipped
+When User Do the signature and Click on Submit..............................skipped
+When User Do the patient signature and Click on Submit......................skipped
+When User Do the caregiver signature and Click on Submit....................skipped
+When User Record patient voice and click on stop recording..................skipped
+And Click on done...........................................................skipped
+When User Fill the mandatory fields as well as value........................skipped
+Then click on Clock out.....................................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "io.appium.java_client.AppiumDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at StepDefinitions.StepDefinitions.user_Click_on_the_patient_details(StepDefinitions.java:82)
+	at ✽.user Click on the patient details(file:///D:/appiumhhaproject/src/test/resources/Features/Homepage.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="Check Login Functionality" name="Check login credentials" time="27.129">
+        <failure message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-IJORS6D', ip: '192.168.0.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {appActivity: crc64b783fcfd1529e85a.Splas..., appPackage: com.hhaexchange.uma, browserName: , databaseEnabled: false, desired: {appActivity: crc64b783fcfd1529e85a.Splas..., appPackage: com.hhaexchange.uma, browserName: , deviceName: Galaxy A03, newCommandTimeout: 60, platformName: android, platformVersion: , udid: R9ZT50585ZW}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-A035F, deviceName: R9ZT50585ZW, deviceScreenDensity: 300, deviceScreenSize: 720x1600, deviceUDID: R9ZT50585ZW, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 1.875, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 45, takesScreenshot: true, udid: R9ZT50585ZW, viewportRect: {height: 1420, left: 0, top: 45, width: 720}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 9f60b680-7084-4bfc-8818-5dc4fa3de4e0&#10;*** Element info: {Using=xpath, value=//android.view.ViewGroup[3]//android.widget.EditText}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is on the login page.............................................passed
+When user enters credentials................................................failed
+When user clicks on Login...................................................skipped
+Then user is on homepage....................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IJORS6D', ip: '192.168.0.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: crc64b783fcfd1529e85a.Splas..., appPackage: com.hhaexchange.uma, browserName: , databaseEnabled: false, desired: {appActivity: crc64b783fcfd1529e85a.Splas..., appPackage: com.hhaexchange.uma, browserName: , deviceName: Galaxy A03, newCommandTimeout: 60, platformName: android, platformVersion: , udid: R9ZT50585ZW}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-A035F, deviceName: R9ZT50585ZW, deviceScreenDensity: 300, deviceScreenSize: 720x1600, deviceUDID: R9ZT50585ZW, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 1.875, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 45, takesScreenshot: true, udid: R9ZT50585ZW, viewportRect: {height: 1420, left: 0, top: 45, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 9f60b680-7084-4bfc-8818-5dc4fa3de4e0
+*** Element info: {Using=xpath, value=//android.view.ViewGroup[3]//android.widget.EditText}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at StepDefinitions.StepDefinitions.user_enters_credentials(StepDefinitions.java:62)
+	at ✽.user enters credentials(file:///D:/appiumhhaproject/src/test/resources/Features/login.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>
