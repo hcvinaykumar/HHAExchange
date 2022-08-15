@@ -24,7 +24,6 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/resources/features"},
 		glue = {"StepDefinitions","Apphooks"},
-		dryRun = false,
 		plugin = {"pretty", "html:target/cucumber-reports",				
 				"timeline:test-output-thread/"
 		},

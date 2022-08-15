@@ -1,4 +1,0 @@
-$(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"6dfc057b-29e4-4082-b709-f8bb94f3c196","feature":"Check Search Functionality","scenario":"verify the  functionality of patient search","start":1660031630825,"group":1,"content":"","tags":"@regresion,","end":1660031720071,"className":"passed"},{"id":"3982bf67-4281-41d1-a30f-16712a4ad3d3","feature":"Check Login Functionality","scenario":"Check login credentials","start":1660031785719,"group":1,"content":"","tags":"@regresion,","end":1660031805466,"className":"failed"},{"id":"471eedf2-8f58-4e01-b4c3-34fe03bd042e","feature":"Check Signup Functionality","scenario":"validate the  functionality of Signup","start":1660031720104,"group":1,"content":"","tags":"@regresion,","end":1660031785634,"className":"failed"}]);
-CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
-});
